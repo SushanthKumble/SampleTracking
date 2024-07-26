@@ -2,11 +2,13 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+   android:layout_marginTop="70dp"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:padding="15dp"
+        android:background="#FFDADA"
+        android:padding="10dp"
         android:layout_height="wrap_content">
 
         <com.google.android.gms.maps.MapView
@@ -39,7 +41,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Status"
+                    android:text="Employee Data"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:paddingBottom="10dp"/>
@@ -122,6 +124,18 @@
                         android:textColor="@android:color/black"
                         />
                 </LinearLayout>
+
+
+                <Button
+                    android:layout_width="350dp"
+                    android:id="@+id/AddTaskBtn"
+                    android:layout_height="wrap_content"
+                    android:text="Assign New Task"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#02563D"/>
+
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -138,10 +152,19 @@
             android:layout_margin="8dp"
             app:cardElevation="4dp">
 
+
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Locations Covered"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"/>
 
                 <TableRow>
                     <TextView

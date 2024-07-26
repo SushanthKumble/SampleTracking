@@ -1,5 +1,6 @@
-package com.example.trackingdesign
+package com.example.trackingdesign.repository
 
+import com.example.trackingdesign.data.LocationUpdate
 import javax.inject.Inject
 
 class LocationRepository @Inject constructor() {
@@ -28,3 +29,19 @@ class LocationRepository @Inject constructor() {
         }
     }
 }
+
+
+//change the repository to following to real implementation
+
+//class UserLocationRepository(private val apiService: ApiService) {
+//
+//    suspend fun getUserLocations(): NetworkResult<List<LocationUpdate>> {
+//        return try {
+//            val response = apiService.getUserLocations()
+//            NetworkResult.Success(response)
+//        } catch (e: Exception) {
+//            NetworkResult.Error(e.message ?: "An unknown error occurred")
+//        }
+//    }
+//}
+

@@ -1,4 +1,4 @@
-package com.example.trackingdesign
+package com.example.trackingdesign.other
 
 object Constants {
 
